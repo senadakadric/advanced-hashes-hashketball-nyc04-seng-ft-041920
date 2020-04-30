@@ -184,3 +184,7 @@ team_names = []
   
 team_names
 end
+
+def player_stats(player_name)
+  
+end

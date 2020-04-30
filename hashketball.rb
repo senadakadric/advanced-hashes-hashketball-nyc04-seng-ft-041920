@@ -199,7 +199,7 @@ end
 def big_shoe_rebounds
 
 largest_shoe_size = 0
-player_with_largest_shoe = "Senada"
+player_with_largest_shoe = ""
 rebounds = 0
 
 game_hash.each do |home_or_away, team_info|

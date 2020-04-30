@@ -133,6 +133,7 @@ def num_points_scored(player_name)
   game_hash.each do |home_or_away, team_info|
     
     # :players key points to a value of player stats that is stored as an ARRAY of hashes, you can iterate through this array to access each hash by using team_info[:players] syntax
+    # below team_info[:players] is an array of hashes, player_stats represents each HASH in that aray
     team_info[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
          return player_stats[:points]

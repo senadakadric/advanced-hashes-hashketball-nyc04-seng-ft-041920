@@ -179,7 +179,7 @@ def team_names
 
 team_names = []
   game_hash.each do |home_or_away, team_info|
-    
+    team_names << team_info[:name]
   end
   
 team_names

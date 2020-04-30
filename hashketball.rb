@@ -162,5 +162,5 @@ def team_colors(team_name)
 end
 
 def player_numbers(team_name)
-
+  jersey_numbers = []
 end

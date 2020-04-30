@@ -131,6 +131,8 @@ end
 def num_points_scored(player_name)
   # first iterating through outer hash, getting home or away as the keys and inner hashes of name, colors, players as value
   game_hash.each do |home_or_away, team_info|
+    
+    # :players key points to a value of player stats that is stored as an ARRAY of hashes, you can iterate through this array to access each hash by using team_info[:players] syntax
     team_info[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
          return player_stats[:points]

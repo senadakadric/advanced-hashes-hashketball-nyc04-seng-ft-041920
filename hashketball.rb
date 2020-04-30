@@ -176,6 +176,8 @@ def player_numbers(team_name)
 end
 
 def team_names
+
+team_names = []
   game_hash.each do |home_or_away, team_info|
     
   end

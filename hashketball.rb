@@ -129,6 +129,7 @@ end
 
 # Write code here
 def num_points_scored(player_name)
+  # first iterating through outer hash, getting home or away as the keys and inner hashes of name, colors, players as value
   game_hash.each do |home_or_away, team_info|
     team_info[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
@@ -139,7 +140,7 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-  #using the same technique as points scored, but replacing the value w/ shoe size (:shoe) instead of points
+  #using the same technique as points scored, but replacing the value w/ shoe size (:shoe) instead of :points
   game_hash.each do |home_or_away, team_info|
     team_info[:players].each do |player_stats|
       if player_stats[:player_name] == player_name

@@ -181,4 +181,6 @@ team_names = []
   game_hash.each do |home_or_away, team_info|
     
   end
+  
+team_names
 end

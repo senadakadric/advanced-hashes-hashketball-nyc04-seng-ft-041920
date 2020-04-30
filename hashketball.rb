@@ -192,4 +192,5 @@ def player_stats(player_name)
       return player_info
     end
   end
+  end
 end
